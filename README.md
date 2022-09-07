@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Mikael182
-- 👀 I’m interested in ...software testing.
-- 🌱 I’m currently learning ...automation testing. 
+- 👀 I’m interested in ...software tests.
+- 🌱 I’m currently learning ...automation tests. 
 - 💞️ I’m looking to collaborate on testing systems integration. 
 - 📫 How to reach me ...slack me/mail me.
 
