@@ -13,5 +13,7 @@ public class hotelClass {
 
         driver.findElement(By.className("user_login")).click();
         driver.findElement(By.className("is_required")).sendKeys("test@com.pl");
+        driver.findElement(By.className("icon-user")).submit();
+        driver.quit();
     }
 }
