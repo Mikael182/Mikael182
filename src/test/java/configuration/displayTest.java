@@ -10,7 +10,6 @@ import java.time.Duration;
 public class displayTest {
     public static void main(String[] args) {
 
-
         System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
