@@ -9,6 +9,13 @@ import java.time.Duration;
 
 public class displayTest {
     public static void main(String[] args) {
+        String emailAddress = "";
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        while (emailAddress.length() < 5) {
+            int character = (int) (Math.random() * 26);
+            emailAddress += alphabet.substring(character, character + 1);
+            emailAddress += Integer.valueOf((int) (Math.random() * 99)).toString();
+            emailAddress += "@" + "com.pl";}
 
         System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver");
         WebDriver driver = new ChromeDriver();
@@ -16,7 +23,7 @@ public class displayTest {
         driver.manage().window().maximize();
         driver.get("https://hotel-testlab.coderslab.pl/en/");
         driver.findElement(By.className("user_login")).click();
-        driver.findElement(By.className("is_required")).sendKeys("test1@com.pl");
+        driver.findElement(By.className("is_required")).sendKeys(emailAddress);
         driver.findElement(By.className("icon-user")).submit();
 
         WebElement firstname = driver.findElement(By.xpath("//input[@id='customer_firstname']"));
