@@ -9,6 +9,7 @@ public class randomMaiGenerator {
             emailAddress += alphabet.substring(character, character + 1);
             emailAddress += Integer.valueOf((int) (Math.random() * 99)).toString();
             emailAddress += "@" + "com.pl";
+            System.out.println(emailAddress);
         }
     }
 }
