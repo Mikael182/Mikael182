@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import javax.management.relation.Role;
 import java.time.Duration;
 
 public class form {
@@ -32,7 +31,7 @@ public class form {
         address.sendKeys("Prosta 51");
         WebElement email = driver.findElement(By.id("email"));
         email.clear();
-        email.sendKeys("karol.kowalski@mailinator.com");
+        email.sendKeys("karol"+System.currentTimeMillis()+".kowalski@mailinator.com");
         WebElement pass = driver.findElement(By.id("password"));
         pass.clear();
         pass.sendKeys("Pass123");
@@ -47,8 +46,6 @@ public class form {
         WebElement comment = driver.findElement(By.id("comment"));
         comment.clear();
         comment.sendKeys("To jest mój pierwszy automat testowy");
-
-       // driver.quit();
-
+       driver.quit();
     }
 }
